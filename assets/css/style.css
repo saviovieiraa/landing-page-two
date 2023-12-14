@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mont');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Mont', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    /* Cores do Bacground */
+
+    --rosa-one: #F8C7C8;
+    --rosa-two: #FAC1C2;
+    --rosa-three:#FEB6B8;
+    --rosa-four: #FFB2B4;
+    --rosa-five: #DC939C;
+
+    /* Cores dos botões */
+    --purple-one: #8468F5;
+    --purple-two: #EC74E7;
+
+    /* Cores de textos */
+
+    --black: #1D1C24;
+    --gray: #52575C;
+    --white: #fff;
+ 
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(156deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%, #DC939C 105.21%);
+}
+
+.content {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(/public/img/Line.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: -2;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    margin-top: 37px;
+    margin-left: 96px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-right: 6rem;
+    transition: 0.5s all;
+}
+
+.nav-item a {
+    color: var(--black);
+}
+
+.nav-item a:hover {
+    color: var(--purple-one);
+}
+
+.nav-item:hover {
+    color: var(--purple-one);
+    border-bottom: 3px solid var(--purple-one);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 120px;
+    height: 50px;
+    background: var(--purple-one);
+    border-radius: 8px;
+    transition: .2s all;
+}
+
+.login:hover {
+    transform: scale(1.1);
+}
+
+.login a {
+    color: var(--white);
+}
+
+.box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+}
+
+.text-box {
+    max-width: 37rem;
+    padding: 0px 96px;
+    margin-bottom: 15rem;
+}
+
+.text-box h1 {
+    font-size: 60px;
+    width: 800px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.text-box span {
+    color: var(--purple-one);
+}
+
+.text-box p {
+    color: var(--gray);
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.btn-input {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    width: 35rem;
+    border-radius: 50px;
+    height: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+}
+
+.input-email{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 15px;
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #EC74E7, #8468F5);
+    margin-right: 30px;
+    height: 40px;
+    width: 190px;
+    color: var(--white);
+    font-weight: 600;
+    padding: 0px 10px;
+    border-radius: 50px;
+    gap: 15px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.send-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+}
+
+.send-btn i {
+    color: var(--white);
+    rotate: -45deg;
+    font-size: 28px;
+}
+
+.img {
+    width: 1000px;
+    margin-bottom: 120px;
+    z-index: -1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+
+.icons-footer {
+    color: var(--white);
+    background: var(--purple-one);
+    font-size: 20pt;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .2s all;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.336);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-footer:hover {
+    background: var(--white);
+    color: #8468F5;
+    transform: scale(1.1);
+}
